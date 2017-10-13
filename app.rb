@@ -17,7 +17,11 @@ class Battle < Sinatra::Base
     @player1, @player2 = session[:name1], session[:name2]
     params.inspect
     erb(:play)
-    
+  end
+
+  get '/p1attacksp2' do
+    puts 'hiya'
+    erb(:attack_confirmation)
   end
 
 

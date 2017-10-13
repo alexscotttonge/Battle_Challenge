@@ -1,3 +1,10 @@
 <%= "Welcome #{@player1} and #{@player2} to the game :)" %>
 
 <p>Player 2 has loads of hit points</p>
+
+<!-- <input type="submit" value="Player 1 attack Player 2!"> -->
+
+<form action="/p1attacksp2" method="get">
+    Player 1 attacks Player 2
+    <input type="submit" value="Player 1 attack Player 2!">
+</form>
