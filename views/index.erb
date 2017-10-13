@@ -1,15 +1,47 @@
 <!-- Testing infrastructure woking! -->
+<!DOCTYPE html>
+<html>
 
-<h1>Let Battle Commence!</h1>
-<h2>Sign in to play</h2>
-<form action="/names" method="post">
-  <label for="name1">
-    Player 1 name
-    <input type="text" name="name1" id="name1">
-  </label>
-  <label for="name2">
-    Player 2 name
-    <input type="text" name="name2" id="name2">
-  </label>
-  <input type="submit" value="Submit">
-</form>
+<head>
+  <title>HTML Internal CSS</title>
+   <style type = "text/css">
+    .red {
+      color: red;
+    }
+    .green {
+      color:green;
+    }
+    .blue {
+      color:blue;
+    }
+    body {
+      background-image: url(./background-3.jpg);
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class = "red">Let Battle Commence!</h1>
+  <h2 class = "blue">Sign in to play</h2>
+  <form action="/names" method="post">
+    <table>
+    <tr>
+    <td><label class = "green" for="name1">
+      <strong>Player 1 name</strong></td>
+      <td><input type="text" name="name1" id="name1"></td>
+    </label>
+    </tr>
+    <tr>
+    <td><label class = "green" for="name2">
+      <strong>Player 2 name</strong></td>
+      <td><input type="text" name="name2" id="name2"></td>
+    </label>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Submit"></td>
+    </tr>
+    </form>
+  <table>
+</body>
+
+</head>
