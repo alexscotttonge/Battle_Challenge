@@ -8,7 +8,7 @@ class Game
     @player2 = player2
   end
 
-  def attack player
-    player.receive_damage
+  def attack player, blow_size
+    player.receive_damage(blow_size)
   end
 end

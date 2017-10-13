@@ -7,8 +7,8 @@ class Player
     @hitpoints = 100
   end
 
-  def receive_damage
-    @hitpoints -= 10
+  def receive_damage blow_size
+    @hitpoints -= blow_size
   end
 
 end
