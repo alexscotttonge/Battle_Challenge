@@ -15,7 +15,9 @@ class Battle < Sinatra::Base
 
   get '/play' do
     @player1, @player2 = session[:name1], session[:name2]
+    params.inspect
     erb(:play)
+    
   end
 
 
