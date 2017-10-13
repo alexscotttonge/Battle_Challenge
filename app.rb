@@ -19,7 +19,7 @@ class Battle < Sinatra::Base
   end
 
   get '/p1attacksp2' do
-    puts 'hiya'
+    $player2.attack 
     erb(:attack_confirmation)
   end
 
